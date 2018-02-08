@@ -1,0 +1,18 @@
+.zmienKolor {
+	color: red;
+	text-shadow: 5px 5px 8px #CCCCCC;
+	text-transform: full-width;
+	height: 100%;
+	font-size: 45px;
+	transition: 1s linear;
+}
+
+.kolorClick {
+	color: red;
+}
+
+.animacjaKostek {
+	color: red;
+	background: red;
+	opacity: 0.1;
+}

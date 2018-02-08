@@ -1,0 +1,25 @@
+.texSub { 
+	display: none;
+	margin: 0;
+	padding: 0;
+	z-index: 2;
+	position: relative;
+	left: 0px;
+	top: 0;
+	max-height: 350px;
+	overflow: auto;
+	max-width: auto;
+	background: linear-gradient(to bottom, rgba(147, 206, 22, 1) 0%, rgba(117, 19, 209, 1) 41%, rgba(73, 5, 19, 1) 100%);
+}
+
+h3 {
+	color: white;
+}
+
+.sub {
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+	height: 380px;
+	width: auto;
+}

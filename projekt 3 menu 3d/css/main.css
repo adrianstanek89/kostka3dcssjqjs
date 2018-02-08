@@ -1,0 +1,416 @@
+body {
+    background-image: url("../img/noc.jpg");
+    background-size: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+#scena {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 150px;
+    position: relative;
+    perspective: 1000px;
+}
+
+#kostka {
+	top:50px;
+	z-index: 1;
+    position: absolute;
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    animation: obracaniekostki 26s infinite alternate;
+    text-decoration: none;
+	position: 0px -400px 0px 400px;
+}
+
+.sciana {
+    opacity: 0.6;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: auto;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+div.front {
+    padding: 0px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to bottom, rgba(147, 206, 22, 1) 0%, rgba(117, 19, 209, 1) 41%, rgba(73, 5, 19, 1) 100%);
+    font-family: 'Stoke', serif;
+    font-size: auto;
+    border-radius: 36px;
+    opacity: 0.8;
+    transition: 0.2s;
+    display: block;
+    transform: translateZ(100px);
+}
+
+div.front a:hover {
+    position: relative;
+    height: 200;
+    width: 200;
+    background: linear-gradient(to bottom, rgba(47, 206, 222, 1) 0%, rgba(117, 189, 209, 1) 41%, rgba(73, 165, 191, 1) 100%);
+    color: #2e3c2e;
+    cursor: pointer;
+}
+
+div.front a:target {
+    background: linear-gradient(to bottom, rgba(7, 206, 222, 1) 0%, rgba(117, 85, 99, 1) 41%, rgba(1, 165, 45, 1) 100%);
+    text-decoration: none;
+}
+
+div.back {
+    padding: 0px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to bottom, rgba(47, 55, 122, 1) 0%, rgba(117, 17, 209, 1) 41%, rgba(73, 115, 25, 1) 100%);
+    font-family: 'Stoke', serif;
+    font-size: auto;
+    border-radius: 36px;
+    opacity: 0.8;
+    transition: 0.2s;
+    display: block;
+    transform: rotateX(180deg) translateZ(100px);
+}
+
+div.left {
+    padding: 0px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to bottom, rgba(5, 206, 222, 1) 0%, rgba(2, 2, 2, 1) 41%, rgba(2, 65, 1, 1) 100%);
+    font-family: 'Stoke', serif;
+    font-size: auto;
+    border-radius: 36px;
+    opacity: 0.8;
+    transition: 0.2s;
+    display: block;
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+div.right {
+    padding: 0px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to bottom, rgba(15, 206, 222, 1) 0%, rgba(117, 19, 209, 1) 41%, rgba(5, 5, 66, 1) 100%);
+    font-family: 'Stoke', serif;
+    font-size: auto;
+    border-radius: 36px;
+    opacity: 0.8;
+    transition: 0.2s;
+    display: block;
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+div.top {
+    padding: 0px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to bottom, rgba(222, 206, 222, 1) 0%, rgba(117, 55, 209, 1) 41%, rgba(73, 165, 99, 1) 100%);
+    font-family: 'Stoke', serif;
+    font-size: auto;
+    border-radius: 36px;
+    opacity: 0.8;
+    transition: 0.2s;
+    display: block;
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+div.bottom {
+    padding: 0px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to bottom, rgba(73, 5, 19, 1) 0%, rgba(117, 99, 15, 1) 41%, rgba(73, 35, 85, 1) 100%);
+    font-family: 'Stoke', serif;
+    font-size: auto;
+    border-radius: 36px;
+    opacity: 0.8;
+    transition: 0.2s;
+    display: block;
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+@keyframes obracaniekostki {
+    from {}
+    to {
+        transform: rotateY(260deg) rotateX(450deg);
+    }
+}
+
+
+/*submenu*/
+
+#scena2 {
+	    float: left;
+    display: none;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    margin-left: 0;
+    position: relative;
+    perspective: 1000px;
+}
+
+#kostka2 {
+    margin-left: 30px;
+    margin-top: 50px;
+    position: absolute;
+    transform-style: preserve-3d;
+    width: 50%;
+    height: 50%;
+    animation: obracaniekostki 20s infinite alternate;
+    text-decoration: none;
+}
+
+#scena3 {
+    float: left;
+    display: none;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    margin-left: 0px;
+    position: relative;
+    perspective: 1000px;
+}
+
+#kostka3 {
+    margin-left: 30px;
+    margin-top: 50px;
+    position: absolute;
+    transform-style: preserve-3d;
+    width: 50%;
+    height: 50%;
+    animation: obracaniekostki 20s infinite alternate;
+    text-decoration: none;
+}
+
+#scena4 {
+    float: left;
+    display: none;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    margin-left: 0px;
+    position: relative;
+    perspective: 1000px;
+}
+
+#kostka4 {
+    margin-left: 30px;
+    margin-top: 50px;
+    position: absolute;
+    transform-style: preserve-3d;
+    width: 50%;
+    height: 50%;
+    animation: obracaniekostki 20s infinite alternate;
+    text-decoration: none;
+}
+
+#scena5 {
+    float: left;
+    display: none;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    margin-left: 0px;
+    position: relative;
+    perspective: 1000px;
+}
+
+#kostka5 {
+    margin-left: 30px;
+    margin-top: 50px;
+    position: absolute;
+    transform-style: preserve-3d;
+    width: 50%;
+    height: 50%;
+    animation: obracaniekostki 20s infinite alternate;
+    text-decoration: none;
+}
+
+#scena6 {
+    float: left;
+    display: none;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    margin-left: 00px;
+    position: relative;
+    perspective: 1000px;
+}
+
+#kostka6 {
+    margin-left: 30px;
+    margin-top: 50px;
+    position: absolute;
+    transform-style: preserve-3d;
+    width: 50%;
+    height: 50%;
+    animation: obracaniekostki 20s infinite alternate;
+    text-decoration: none;
+}
+
+#scena7 {
+    float: left;
+    display: none;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    margin-left: 00px;
+    position: relative;
+    perspective: 1000px;
+}
+
+#kostka7 {
+    margin-left: 30px;
+    margin-top: 50px;
+    position: absolute;
+    transform-style: preserve-3d;
+    width: 50%;
+    height: 50%;
+    animation: obracaniekostki 20s infinite alternate;
+    text-decoration: none;
+}
+
+
+/*    */
+
+.sciany {
+    opacity: 0.6;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: auto;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.front1 {
+    padding: 0px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to bottom, rgba(147, 1, 22, 1) 0%, rgba(2, 19, 209, 1) 41%, rgba(3, 5, 19, 1) 100%);
+    font-family: 'Stoke', serif;
+    font-size: auto;
+    border-radius: 6px;
+    opacity: 0.8;
+    transition: 0.2s;
+    display: block;
+    transform: translateZ(50px);
+}
+
+.back1 {
+    padding: 0px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to bottom, rgba(4, 55, 122, 1) 0%, rgba(5, 17, 209, 1) 41%, rgba(6, 115, 25, 1) 100%);
+    font-family: 'Stoke', serif;
+    font-size: auto;
+    border-radius: 6px;
+    opacity: 0.8;
+    transition: 0.2s;
+    display: block;
+    transform: rotateX(180deg) translateZ(50px);
+}
+
+.left1 {
+    padding: 0px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to bottom, rgba(5, 15, 222, 1) 0%, rgba(2, 2, 2, 1) 41%, rgba(2, 99, 1, 1) 100%);
+    font-family: 'Stoke', serif;
+    font-size: auto;
+    border-radius: 6px;
+    opacity: 0.8;
+    transition: 0.2s;
+    display: block;
+    transform: rotateY(-90deg) translateZ(50px);
+}
+
+.right1 {
+    padding: 0px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to bottom, rgba(15, 15, 222, 1) 0%, rgba(17, 19, 209, 1) 41%, rgba(5, 5, 66, 1) 100%);
+    font-family: 'Stoke', serif;
+    font-size: auto;
+    border-radius: 6px;
+    opacity: 0.8;
+    transition: 0.2s;
+    display: block;
+    transform: rotateY(90deg) translateZ(50px);
+}
+
+.top1 {
+    padding: 0px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to bottom, rgba(0, 206, 222, 1) 0%, rgba(117, 55, 209, 1) 41%, rgba(73, 165, 99, 1) 100%);
+    font-family: 'Stoke', serif;
+    font-size: auto;
+    border-radius: 6px;
+    opacity: 0.8;
+    transition: 0.2s;
+    display: block;
+    transform: rotateX(90deg) translateZ(50px);
+}
+
+.bottom1 {
+    padding: 0px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to bottom, rgba(73, 5, 19, 1) 0%, rgba(0, 99, 15, 1) 41%, rgba(73, 35, 85, 1) 100%);
+    font-family: 'Stoke', serif;
+    font-size: auto;
+    border-radius: 6px;
+    opacity: 0.8;
+    transition: 0.2s;
+    display: block;
+    transform: rotateX(-90deg) translateZ(50px);
+}
+
+hr {
+    width: 105%;
+    color: silver;
+    height: 3px;
+    background: silver;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    /*border-radius: 1px #ccc;*/
+    box-shadow: 2px;
+}
+
+h1 {
+    margin-top: 75px;
+    color: aliceblue;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+h2 {
+    margin-top: 15px;
+    font-size: 20px;
+    word-wrap: break-word;
+    max-width: 100%;
+    max-height: 50px;
+    padding: 0px;
+}
+
+#submenu {
+    width: 100%;
+    margin: 0 auto;
+}
+a:-webkit-any-link{
+    text-decoration: none;
+	color: white;
+}
